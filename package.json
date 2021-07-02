@@ -1,0 +1,24 @@
+{
+  "name": "demo-koa-bugsnag-error-events",
+  "version": "1.0.0",
+  "description": "Demonstrates how Bugsnag's Koa plugin suppresses application-level error events",
+  "main": "index.js",
+  "author": "Markus Greystone <markus.greystone@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/mgreystone/demo-koa-bugsnag-error-events",
+  "scripts": {
+    "start": "node ./index"
+  },
+  "dependencies": {
+    "@bugsnag/js": "^7.10.4",
+    "@bugsnag/plugin-koa": "^7.10.0",
+    "koa": "^2.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
