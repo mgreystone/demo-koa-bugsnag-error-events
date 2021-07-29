@@ -20,8 +20,12 @@ withoutBugsnag.use(handler)
 withoutBugsnag.listen(3000)
 
 const withBugsnag = new Koa()
-withBugsnag.on('error', customLogger)
-withBugsnag.on('error', bugsnagKoaMiddleware.errorHandler)
+
+withBugsnag.on('error', (err, ctx) => {
+  customLogger(err, ctx)
+  bugsnagKoaMiddleware.errorHandler(err, ctx)
+})
+
 withBugsnag.use(bugsnagKoaMiddleware.requestHandler)
 withBugsnag.use(handler)
 withBugsnag.listen(3001)
