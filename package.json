@@ -10,8 +10,8 @@
     "start": "node ./index"
   },
   "dependencies": {
-    "@bugsnag/js": "^7.10.4",
-    "@bugsnag/plugin-koa": "^7.10.0",
+    "@bugsnag/js": "7.11.0",
+    "@bugsnag/plugin-koa": "7.11.0",
     "koa": "^2.13.1"
   },
   "devDependencies": {

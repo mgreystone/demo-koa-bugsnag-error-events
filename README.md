@@ -2,6 +2,8 @@
 
 **https://github.com/bugsnag/bugsnag-js/issues/1459**
 
+**PATCHED**
+
 Demonstration of how Bugsnag's Koa plugin is supressing application-level error events.
 
 ## To Use
